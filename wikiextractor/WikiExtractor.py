@@ -291,7 +291,7 @@ def collect_pages(text):
     inText = False
     redirect = False
     for i, line in enumerate(text):
-        if i < 100:
+        if i < 5000:
             print([line])
             continue
         else:
