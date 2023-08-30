@@ -290,7 +290,12 @@ def collect_pages(text):
     last_id = ''
     inText = False
     redirect = False
-    for line in text:
+    for i, line in enumerate(text):
+        if i < 100:
+            print([line])
+            continue
+        else:
+            assert False
         if '<' not in line:     # faster than doing re.search()
             if inText:
                 page.append(line)
