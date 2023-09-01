@@ -1,0 +1,1 @@
+python -m wikiextractor.WikiExtractor -o /gscratch/h2lab/alrope/data/wikipedia/processed --json --no-templates /gscratch/h2lab/alrope/data/wikipedia/enwiki-20230820-pages-articles-multistream.xml.bz2 

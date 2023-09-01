@@ -291,11 +291,6 @@ def collect_pages(text):
     inText = False
     redirect = False
     for i, line in enumerate(text):
-        if i < 500:
-            print([line])
-            continue
-        else:
-            assert False
         if '<' not in line:     # faster than doing re.search()
             if inText:
                 page.append(line)
